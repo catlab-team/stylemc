@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description"
+          content="##########">
+    <meta name="keywords" content="LatentCLR">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>StyleMC: Multi-Channel Based Fast Text-Guided Image Generationand Manipulation</title>
+    <!-- BAAk -->
+    <!-- Global site tag (gtag.js) - Google Analytics  -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-PYVRSFMDRL');
+
+
+    </script>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <h3 class="title is-4">In ICCV 2021</h3>
+
+                    <h1 class="title is-1 publication-title">StyleMC: Multi-Channel Based Fast Text-Guided Image Generationand Manipulation</h1>
+                    <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <span>Umut Kocasarı<sup>1</sup>,</span>
+                        <span class="author-block">
+              <span>Alara Dirik<sup>1</sup>,</span>
+                        <span class="author-block">
+              <span>Mert Tiftikci<span><sup>1</sup>,
+            </span>
+                        <span class="author-block">
+              <a href="https://pinguar.org/">Pinar Yanardag</a><sup>1</sup>,
+            </span>
+                    </div>
+
+                    <div class="is-size-5 publication-authors">
+                        <span class="author-block"><sup>3</sup>Bogazici University</span>
+                    </div>
+
+                    <div class="column has-text-centered">
+                        <div class="publication-links">
+                            <!-- PDF Link. -->
+
+                            <span class="link-block">
+                <a href="https://arxiv.org"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+                            <!-- Video Link. -->
+                            <span class="link-block">
+                <a href="https://youtu.be/2kMi6MfmGM8"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+                            <!-- Code Link. -->
+                            <span class="link-block">
+                <a href="https://github.com/catlab-team/stylemc"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section">
+    <div class="container is-max-desktop">
+        <!-- Abstract. -->        <!-- Paper video. -->
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Video</h2>
+
+                <figure class="image is-16by9">
+                    <iframe class="has-ratio" width="640" height="360" src="https://www.youtube.com/embed/2kMi6MfmGM8"
+                            frameborder="0" allowfullscreen></iframe>
+                </figure>
+            </div>
+        </div>
+        <!--/ Paper video. -->
+    </div>
+</section>
+
+
+<!--/ Paper video. -->
+
+<section class="section">
+    <div class="container is-max-desktop">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Abstract</h2>
+                <div class="content has-text-justified">
+
+                    <p>
+                        Discovering meaningful directions in the latent space of GANs
+                        to manipulate semantic attributes typically requires large amounts
+                        of labeled data. Recent work aims to overcome this limitation by
+                        leveraging the power of Contrastive Language-Image Pre-training (CLIP),
+                        a joint text-image model. While promising, these methods require several
+                        hours of preprocessing or training to achieve the desired manipulations.
+                        In this paper, we present StyleMC, a fast and efficient method for
+                        text-driven image generation and manipulation. StyleMC uses a CLIP-based
+                        loss and an identity loss to manipulate images via a single text prompt
+                        without significantly affecting other attributes. Unlike prior work, StyleMC
+                        requires only a few seconds of training per text prompt to find stable
+                        global directions, does not require prompt engineering and can be used with
+                        any pre-trained StyleGAN2 model. We demonstrate the effectiveness of our method
+                        and compare it to state-of-the-art methods.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+        <!--/ Abstract. -->
+        <br>
+    </div>
+
+</section>
+
+
+<section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+        <h2 class="title">BibTeX</h2>
+        <pre><code>@misc{yüksel2021latentclr,
+      title={StyleMC: Multi-Channel Based Fast Text-Guided Image Generation and Manipulation},
+      author={Umut Kocasarı and Alara Dirik and Mert Tiftikci and Pinar Yanardag},
+      year={2021},
+      eprint={},
+      archivePrefix={},
+      primaryClass={cs.LG}
+}</code></pre>
+    </div>
+</section>
+
+
+<section class="section" id="ack">
+    <div class="container is-max-desktop content">
+        <h2 class="title">Acknowledgments</h2>
+        <p>
+            This publication has been produced benefiting from the 2232 International
+            Fellowship for Outstanding Researchers Program of TUBITAK (Project No: 118c321).
+            We also acknowledge the support of NVIDIA Corporation through the donation of the
+            TITAN RTX GPU and GCP research credits from Google.
+        </p>
+    </div>
+</section>
+
+
+<footer class="footer">
+    <div class="container">
+
+        <div class="columns is-centered">
+            <div class="column is-8">
+                <div class="content">
+                    <p>
+                        This website is licensed under a <a rel="license"
+                                                            href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                        Commons Attribution-ShareAlike 4.0 International License</a>.
+                    </p>
+                    <p>
+                        Template from <a
+                            href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
