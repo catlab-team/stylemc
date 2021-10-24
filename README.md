@@ -1,6 +1,6 @@
 # StyleMC: Multi-Channel Based Fast Text-Guided Image Generation and Manipulation
 
-This is the repository that contains source code for the [LatentCLR website](https://catlab-team.github.io/stylemc/).
+This is the repository that contains source code for the [StyleMC website](https://catlab-team.github.io/stylemc/).
 
 
 If you find our work useful please cite:
@@ -10,7 +10,7 @@ If you find our work useful please cite:
   author={Kocasarı, Umut and Dirik, Alara and Tiftikci, Mert and Yanardag, Pinar},
   booktitle={},
   month={},
-  year={2021},
+  year={2022},
   pages={}
 }
 ```
