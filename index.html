@@ -179,28 +179,40 @@
 
         <div class="content has-text-justified">
           <p>
-            We propose to use contrastive learning on feature divergences
-            to discover interpretable directions in the latent
-            space of pre-trained GAN models such as Style-
-            GAN2 and BigGAN.
+            
           </p>
         </div>
 
         <div class="container is-max-desktop">
-          <h2 class="title is-4">StyleGAN2 Directions</h2>
+          <h2 class="title is-4">StyleGAN2 FFHQ Directions</h2>
 
           <div id="results-carousel" class="carousel results-carousel">
             <div class="item item-shiba">
-              <img src="static/gif/car_type_4_1007__1__SparkVideo.gif">
+              <img src="static/gif/makeup_04_15.gif">
             </div>
             <div class="item item-fullbody">
-              <img src="static/gif/cat_breed_36_SparkVideo.gif">
+              <img src="static/gif/Donald_Trump_04_30.gif">
             </div>
             <div class="item item-blueshirt">
-              <img src="static/gif/cat_fluffines_119__2__SparkVideo.gif">
+              <img src="static/gif/a_person_with_mohawk_hairstyle_05_40.gif">
             </div>
             <div class="item item-mask">
-              <img src="static/gif/horse_add_rider_2_98__2__SparkVideo.gif">
+              <img src="static/gif/makeup_09_15.gif">
+            </div>
+            <div class="item item-mask">
+              <img src="static/gif/Donald_Trump_54_30.gif">
+            </div>
+            <div class="item item-mask">
+              <img src="static/gif/a_person_with_mohawk_hairstyle_09_60.gif">
+            </div>
+            <div class="item item-mask">
+              <img src="static/gif/makeup_32_15.gif">
+            </div>
+            <div class="item item-mask">
+              <img src="static/gif/Donald_Trump_66_30.gif">
+            </div>
+            <div class="item item-mask">
+              <img src="static/gif/a_person_with_mohawk_hairstyle_57_60.gif">
             </div>
           </div>
 
@@ -218,21 +230,7 @@
                 </div>
               </div>
             </div>
-
-            <br>
-            <div class="columns is-centered">
-              <div class="column is-full-width">
-                <h2 class="title is-4">BigGAN Directions</h2>
-
-                <div class="publication-body">
-                  <img src="static/images/class_specific.png">
-                  <em>Class-specific directions discovered by our method in several ImageNet classes on
-                      the BigGAN model.</em>
-                </div>
-              </div>
-            </div>
           </div>
-          <br/>
         </div>
       </div>
     </div>
@@ -246,116 +244,102 @@
         <p>
           Comparison of our method with TediGAN, StyleCLIP-GD and StyleCLIP-LM methods.
         </p>
-        <div class="columns is-centered">
-          <div class="row">
-            <div class="column">
-              <h3 class="title is-4">Donald Trump</h3>
-              <div class="col-content">
-                <div class="columns">
-                  <div class="column"> <img src="static/images/comparison/Trump_recon_0.jpg"> </div>
-                  <div class="column"> <img src="static/images/comparison/Trump_tedi_0.jpg"> </div>
-                  <div class="column"> <img src="static/images/comparison/Trump_GD_0.jpg"> </div>
-                  <div class="column"> <img src="static/images/comparison/Trump_LM_0.jpg"> </div>
-                  <div class="column"> <img src="static/images/comparison/Trump_ours_0.jpg"> </div>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <h3 class="title is-4">Mohawk Hairstyle</h3>
-              <div class="col-content">
-                <div class="columns">
-                  <div class="column"> <img src="static/images/comparison/Mohawk_recon_0.jpg"> </div>
-                  <div class="column"> <img src="static/images/comparison/Mohawk_tedi_0.jpg"> </div>
-                  <div class="column"> <img src="static/images/comparison/Mohawk_GD_0.jpg"> </div>
-                  <div class="column"> <img src="static/images/comparison/Mohawk_LM_0.jpg"> </div>
-                  <div class="column"> <img src="static/images/comparison/Mohawk_ours_0.jpg"> </div>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <h3 class="title is-4">Makeup</h3>
-              <div class="col-content">
-                <div class="columns">
-                  <div class="column"> <img src="static/images/comparison/Makeup_recon_0.jpg"> </div>
-                  <div class="column"> <img src="static/images/comparison/Makeup_tedi_0.jpg"> </div>
-                  <div class="column"> <img src="static/images/comparison/Makeup_GD_0.jpg"> </div>
-                  <div class="column"> <img src="static/images/comparison/Makeup_LM_0.jpg"> </div>
-                  <div class="column"> <img src="static/images/comparison/Makeup_ours_0.jpg"> </div>
-                </div>
-              </div>
-            </div>
+        <img src="static/images/comparison.png">
+        <!-- <div class="rows is-centered">
+          <div class="columns">
+            <div class="column no-padding has-text-centered"><h4 class="title is-4">Donald Trump</h4></div>
           </div>
-          <div class="row">
-            <div class="column">
-              <div class="col-content">
-                <div class="columns">
-                  <div class="column"> <img src="static/images/comparison/Trump_recon_1.jpg"> </div>
-                  <div class="column"> <img src="static/images/comparison/Trump_tedi_1.jpg"> </div>
-                  <div class="column"> <img src="static/images/comparison/Trump_GD_1.jpg"> </div>
-                  <div class="column"> <img src="static/images/comparison/Trump_LM_1.jpg"> </div>
-                  <div class="column"> <img src="static/images/comparison/Trump_ours_1.jpg"> </div>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="col-content">
-                <div class="columns">
-                  <div class="column"> <img src="static/images/comparison/Mohawk_recon_1.jpg"> </div>
-                  <div class="column"> <img src="static/images/comparison/Mohawk_tedi_1.jpg"> </div>
-                  <div class="column"> <img src="static/images/comparison/Mohawk_GD_1.jpg"> </div>
-                  <div class="column"> <img src="static/images/comparison/Mohawk_LM_1.jpg"> </div>
-                  <div class="column"> <img src="static/images/comparison/Mohawk_ours_1.jpg"> </div>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="col-content">
-                <div class="columns">
-                  <div class="column"> <img src="static/images/comparison/Makeup_recon_1.jpg"> </div>
-                  <div class="column"> <img src="static/images/comparison/Makeup_tedi_1.jpg"> </div>
-                  <div class="column"> <img src="static/images/comparison/Makeup_GD_1.jpg"> </div>
-                  <div class="column"> <img src="static/images/comparison/Makeup_LM_1.jpg"> </div>
-                  <div class="column"> <img src="static/images/comparison/Makeup_ours_1.jpg"> </div>
-                </div>
-              </div>
-            </div>
+          <div class="columns">
+            <div class="column no-padding has-text-centered">Input</div>
+            <div class="column no-padding has-text-centered">TediGAN</div>
+            <div class="column no-padding has-text-centered">StyleGAN-GD</div>
+            <div class="column no-padding has-text-centered">StyleGAN-LM</div>
+            <div class="column no-padding has-text-centered">Ours</div>
           </div>
-          <div class="row">
-            <div class="column">
-              <div class="col-content">
-                <div class="columns">
-                  <div class="column"> <img src="static/images/comparison/Trump_recon_2.jpg"> </div>
-                  <div class="column"> <img src="static/images/comparison/Trump_tedi_2.jpg"> </div>
-                  <div class="column"> <img src="static/images/comparison/Trump_GD_2.jpg"> </div>
-                  <div class="column"> <img src="static/images/comparison/Trump_LM_2.jpg"> </div>
-                  <div class="column"> <img src="static/images/comparison/Trump_ours_2.jpg"> </div>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="col-content">
-                <div class="columns">
-                  <div class="column"> <img src="static/images/comparison/Mohawk_recon_2.jpg"> </div>
-                  <div class="column"> <img src="static/images/comparison/Mohawk_tedi_2.jpg"> </div>
-                  <div class="column"> <img src="static/images/comparison/Mohawk_GD_2.jpg"> </div>
-                  <div class="column"> <img src="static/images/comparison/Mohawk_LM_2.jpg"> </div>
-                  <div class="column"> <img src="static/images/comparison/Mohawk_ours_2.jpg"> </div>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="col-content">
-                <div class="columns">
-                  <div class="column"> <img src="static/images/comparison/Makeup_recon_2.jpg"> </div>
-                  <div class="column"> <img src="static/images/comparison/Makeup_tedi_2.jpg"> </div>
-                  <div class="column"> <img src="static/images/comparison/Makeup_GD_2.jpg"> </div>
-                  <div class="column"> <img src="static/images/comparison/Makeup_LM_2.jpg"> </div>
-                  <div class="column"> <img src="static/images/comparison/Makeup_ours_2.jpg"> </div>
-                </div>
-              </div>
-            </div>
+          <div class="columns">
+            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Trump_recon_0.jpg"> </div>
+            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Trump_tedi_0.jpg"> </div>
+            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Trump_GD_0.jpg"> </div>
+            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Trump_LM_0.jpg"> </div>
+            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Trump_ours_0.jpg"> </div>
           </div>
-        </div>
+          <div class="columns">
+            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Trump_recon_1.jpg"> </div>
+            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Trump_tedi_1.jpg"> </div>
+            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Trump_GD_1.jpg"> </div>
+            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Trump_LM_1.jpg"> </div>
+            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Trump_ours_1.jpg"> </div>
+          </div>
+          <div class="columns">
+            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Trump_recon_2.jpg"> </div>
+            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Trump_tedi_2.jpg"> </div>
+            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Trump_GD_2.jpg"> </div>
+            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Trump_LM_2.jpg"> </div>
+            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Trump_ours_2.jpg"> </div>
+          </div>
+          <div class="columns">
+            <div class="column no-padding has-text-centered"><h4 class="title is-4">Mohawk Hairstyle</h4>Mohawk Hairstyle</div>
+          </div>
+          <div class="columns">
+            <div class="column no-padding has-text-centered">Input</div>
+            <div class="column no-padding has-text-centered">TediGAN</div>
+            <div class="column no-padding has-text-centered">StyleGAN-GD</div>
+            <div class="column no-padding has-text-centered">StyleGAN-LM</div>
+            <div class="column no-padding has-text-centered">Ours</div>
+          </div>
+          <div class="columns">
+            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Mohawk_recon_0.jpg"> </div>
+            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Mohawk_tedi_0.jpg"> </div>
+            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Mohawk_GD_0.jpg"> </div>
+            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Mohawk_LM_0.jpg"> </div>
+            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Mohawk_ours_0.jpg"> </div>
+          </div>
+          <div class="columns">
+            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Mohawk_recon_1.jpg"> </div>
+            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Mohawk_tedi_1.jpg"> </div>
+            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Mohawk_GD_1.jpg"> </div>
+            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Mohawk_LM_1.jpg"> </div>
+            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Mohawk_ours_1.jpg"> </div>
+          </div>
+          <div class="columns">
+            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Mohawk_recon_2.jpg"> </div>
+            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Mohawk_tedi_2.jpg"> </div>
+            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Mohawk_GD_2.jpg"> </div>
+            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Mohawk_LM_2.jpg"> </div>
+            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Mohawk_ours_2.jpg"> </div>
+          </div>
+          <div class="columns">
+            <div class="column no-padding has-text-centered"><h4 class="title is-4">Makeup</h4></div>
+          </div>
+          <div class="columns">
+            <div class="column no-padding has-text-centered">Input</div>
+            <div class="column no-padding has-text-centered">TediGAN</div>
+            <div class="column no-padding has-text-centered">StyleGAN-GD</div>
+            <div class="column no-padding has-text-centered">StyleGAN-LM</div>
+            <div class="column no-padding has-text-centered">Ours</div>
+          </div>
+          <div class="columns">
+            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Makeup_recon_0.jpg"> </div>
+            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Makeup_tedi_0.jpg"> </div>
+            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Makeup_GD_0.jpg"> </div>
+            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Makeup_LM_0.jpg"> </div>
+            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Makeup_ours_0.jpg"> </div>
+          </div>
+          <div class="columns">
+            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Makeup_recon_1.jpg"> </div>
+            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Makeup_tedi_1.jpg"> </div>
+            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Makeup_GD_1.jpg"> </div>
+            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Makeup_LM_1.jpg"> </div>
+            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Makeup_ours_1.jpg"> </div>
+          </div>
+          <div class="columns">
+            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Makeup_recon_2.jpg"> </div>
+            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Makeup_tedi_2.jpg"> </div>
+            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Makeup_GD_2.jpg"> </div>
+            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Makeup_LM_2.jpg"> </div>
+            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Makeup_ours_2.jpg"> </div>
+          </div>
+        </div> -->
       </div>
     </div>
   </section>

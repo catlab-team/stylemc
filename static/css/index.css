@@ -194,3 +194,6 @@ body {
 .box.gray:before{
   background-color:darkgrey;
 }
+.column.no-padding{
+    padding:0;
+}
