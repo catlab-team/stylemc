@@ -1,0 +1,9 @@
+**/__pycache__/
+.cache/
+**/.DS_Store
+*.sh
+*.pt
+*.dat
+*.pth
+out/*
+*.npz
