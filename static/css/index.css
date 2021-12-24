@@ -197,3 +197,8 @@ body {
 .column.no-padding{
     padding:0;
 }
+
+.has-text-justified img{
+    margin: auto;
+    display: block;
+}

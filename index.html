@@ -121,7 +121,6 @@
 
   <section class="section">
     <div class="container is-max-desktop">
-      <!-- Abstract. -->
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <h2 class="title is-3">Abstract</h2>
@@ -144,6 +143,7 @@
             </p>
           </div>
         </div>
+        <img src="static/images/teaser.png">
       </div>
       <br>
       <div class="columns is-centered">
@@ -151,22 +151,21 @@
           <h2 class="title is-3">StyleMC Framework</h2>
 
           <div class="content has-text-justified">
-            <img src="static/images/framework.png">
+            <img src="static/images/framework.png" width="50%">
             <p>
               The architecture of StyleMC (using the text prompt "Mohawk" as an example).
               The latent code <b>s</b> and ∆s+s are passed through the generator. The global manipulation
               direction ∆s corresponding to the text promptis optimized by minimizing CLIP loss
               and identity loss.
               <ul>
-                <li>Low resolution layers</li>
-                <li>Small batch of images</li>
-                <li>Operating on <i>S</i></li>
+                <li><b>Fast Manipulation:</b> We propose a fast text-guided image generation and manipulation method that finds multiple style channels which control the desired attributes in 5s per text.</li>
+                <li><b>Low resolution layers:</b> Unlike previous work, our method finds directions using only layers up to 256×256 resolution within StyleGAN2, providing a significant speedup. We then use the found directions to apply manipulations and generate images at high resolutions such as 1024×1024.</li>
+                <li><b>Small batch of images:</b> Our method uses only 128 randomly generated images to find stable and global manipulation directions regardless of the given text prompt. </li>
               </ul>
             </p>
           </div>
         </div>
       </div>
-      <br>
     </div>
   </section>
 
@@ -176,14 +175,21 @@
       <div class="column is-full-width">
         <h2 class="title is-3">A Variety of Manipulations</h2>
 
-        <div class="content has-text-justified">
-          <p>
-            
-          </p>
-        </div>
-
         <div class="container is-max-desktop">
           <h2 class="title is-4">StyleGAN2 FFHQ Directions</h2>
+
+          <div class="content has-text-justified">
+            <div class="columns is-centered">
+              <div class="column is-full-width">
+                <div class="publication-body">
+                  <img src="static/images/final.jpg" height="1024">
+                  <em>
+                    A variety of manipulations on SyleGAN2 FFHQ model. Rows 1-4 shows inverted real images and Rows 5-8 showsrandomly generated images.The text prompt used for the manipulation is above each column.
+                  </em>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <div id="results-carousel" class="carousel results-carousel">
             <div class="item item-shiba">
@@ -214,19 +220,34 @@
               <img src="static/gif/a_person_with_mohawk_hairstyle_57_60.gif">
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+    <br>
+  </section>
 
-          <div class="content has-text-justified">
-            <div class="columns is-centered">
-              <div class="column is-full-width">
-                <div class="publication-body">
-                  <img src="static/images/final.jpg" height="1024">
-                  <em>
-                    A variety of manipulations on SyleGAN2 FFHQ model. Rows 1-4 shows inverted real images and Rows 5-8 showsrandomly generated images.The text prompt used for the manipulation is above each column.
-                  </em>
-                </div>
-              </div>
-            </div>
-          </div>
+  <section>
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Comparison with other methods</h2>
+
+      <div class="container is-max-desktop">
+        <h2 class="title is-4">Comparison with StyleCLIP and TediGAN</h2>
+        <div class="content has-text-justified">
+          <p>
+            Comparison of our method with TediGAN, StyleCLIP-GD and StyleCLIP-LM methods.
+          </p>
+          <img src="static/images/comparison.png">
+        </div>
+      </div>
+
+      <div class="container is-max-desktop">
+        <h2 class="title is-4">Comparison with Unsupervised Methods</h2>
+        <div class="content has-text-justified">
+          <p>
+            Comparison with GANspace, SeFa and LatentCLR methods. The leftmost image represents the input image, 
+            while images denoted with ↑ and ↓ represent edits in the positive or negative direction.
+          </p>
+          <img src="static/images/unsupervised.png">
         </div>
       </div>
     </div>
@@ -234,108 +255,9 @@
 
   <section>
     <div class="container is-max-desktop">
-      <!-- Re-rendering. -->
-      <h2 class="title is-3">Comparison with other methods</h2>
+      <h2 class="title is-3">Poster</h2>
       <div class="content has-text-justified">
-        <p>
-          Comparison of our method with TediGAN, StyleCLIP-GD and StyleCLIP-LM methods.
-        </p>
-        <img src="static/images/comparison.png">
-        <!-- <div class="rows is-centered">
-          <div class="columns">
-            <div class="column no-padding has-text-centered"><h4 class="title is-4">Donald Trump</h4></div>
-          </div>
-          <div class="columns">
-            <div class="column no-padding has-text-centered">Input</div>
-            <div class="column no-padding has-text-centered">TediGAN</div>
-            <div class="column no-padding has-text-centered">StyleGAN-GD</div>
-            <div class="column no-padding has-text-centered">StyleGAN-LM</div>
-            <div class="column no-padding has-text-centered">Ours</div>
-          </div>
-          <div class="columns">
-            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Trump_recon_0.jpg"> </div>
-            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Trump_tedi_0.jpg"> </div>
-            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Trump_GD_0.jpg"> </div>
-            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Trump_LM_0.jpg"> </div>
-            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Trump_ours_0.jpg"> </div>
-          </div>
-          <div class="columns">
-            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Trump_recon_1.jpg"> </div>
-            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Trump_tedi_1.jpg"> </div>
-            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Trump_GD_1.jpg"> </div>
-            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Trump_LM_1.jpg"> </div>
-            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Trump_ours_1.jpg"> </div>
-          </div>
-          <div class="columns">
-            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Trump_recon_2.jpg"> </div>
-            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Trump_tedi_2.jpg"> </div>
-            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Trump_GD_2.jpg"> </div>
-            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Trump_LM_2.jpg"> </div>
-            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Trump_ours_2.jpg"> </div>
-          </div>
-          <div class="columns">
-            <div class="column no-padding has-text-centered"><h4 class="title is-4">Mohawk Hairstyle</h4>Mohawk Hairstyle</div>
-          </div>
-          <div class="columns">
-            <div class="column no-padding has-text-centered">Input</div>
-            <div class="column no-padding has-text-centered">TediGAN</div>
-            <div class="column no-padding has-text-centered">StyleGAN-GD</div>
-            <div class="column no-padding has-text-centered">StyleGAN-LM</div>
-            <div class="column no-padding has-text-centered">Ours</div>
-          </div>
-          <div class="columns">
-            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Mohawk_recon_0.jpg"> </div>
-            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Mohawk_tedi_0.jpg"> </div>
-            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Mohawk_GD_0.jpg"> </div>
-            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Mohawk_LM_0.jpg"> </div>
-            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Mohawk_ours_0.jpg"> </div>
-          </div>
-          <div class="columns">
-            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Mohawk_recon_1.jpg"> </div>
-            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Mohawk_tedi_1.jpg"> </div>
-            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Mohawk_GD_1.jpg"> </div>
-            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Mohawk_LM_1.jpg"> </div>
-            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Mohawk_ours_1.jpg"> </div>
-          </div>
-          <div class="columns">
-            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Mohawk_recon_2.jpg"> </div>
-            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Mohawk_tedi_2.jpg"> </div>
-            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Mohawk_GD_2.jpg"> </div>
-            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Mohawk_LM_2.jpg"> </div>
-            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Mohawk_ours_2.jpg"> </div>
-          </div>
-          <div class="columns">
-            <div class="column no-padding has-text-centered"><h4 class="title is-4">Makeup</h4></div>
-          </div>
-          <div class="columns">
-            <div class="column no-padding has-text-centered">Input</div>
-            <div class="column no-padding has-text-centered">TediGAN</div>
-            <div class="column no-padding has-text-centered">StyleGAN-GD</div>
-            <div class="column no-padding has-text-centered">StyleGAN-LM</div>
-            <div class="column no-padding has-text-centered">Ours</div>
-          </div>
-          <div class="columns">
-            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Makeup_recon_0.jpg"> </div>
-            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Makeup_tedi_0.jpg"> </div>
-            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Makeup_GD_0.jpg"> </div>
-            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Makeup_LM_0.jpg"> </div>
-            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Makeup_ours_0.jpg"> </div>
-          </div>
-          <div class="columns">
-            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Makeup_recon_1.jpg"> </div>
-            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Makeup_tedi_1.jpg"> </div>
-            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Makeup_GD_1.jpg"> </div>
-            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Makeup_LM_1.jpg"> </div>
-            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Makeup_ours_1.jpg"> </div>
-          </div>
-          <div class="columns">
-            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Makeup_recon_2.jpg"> </div>
-            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Makeup_tedi_2.jpg"> </div>
-            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Makeup_GD_2.jpg"> </div>
-            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Makeup_LM_2.jpg"> </div>
-            <div class="column no-padding has-text-centered"> <img src="static/images/comparison/Makeup_ours_2.jpg"> </div>
-          </div>
-        </div> -->
+        <img src="static/images/poster.png">
       </div>
     </div>
   </section>
