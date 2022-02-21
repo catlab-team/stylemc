@@ -7,7 +7,7 @@ Video: https://www.youtube.com/watch?v=ILm_5tvtzPI<br>
 
 
 ## Installation and Usage
-The easiest way to get started with StyleMC is to run our [Colab notebook](https://colab.research.google.com/drive/1ByojSKlTozy_DSxnZ5dPjXu7om5W1J5v?usp=sharing). 
+The easiest way to get started with StyleMC is to run our [Colab notebook](https://colab.research.google.com/drive/1ByojSKlTozy_DSxnZ5dPjXu7om5W1J5v?usp=sharing) or Replicate demo [![Replicate](https://replicate.com/catlab-team/stylemc/badge)](https://replicate.com/catlab-team/stylemc). 
 
 Alternatively, you can run StyleMC on your local as follows:
 - Install CLIP as a Python package following the official [CLIP repository](https://github.com/openai/CLIP) instructions
