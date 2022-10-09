@@ -5,13 +5,12 @@ This is the repository that contains source code for the [StyleMC website](https
 
 If you find our work useful please cite:
 ```
-@inproceedings{kocasari2021stylemc,
+@article{Kocasari2022StyleMCMB,
   title={StyleMC: Multi-Channel Based Fast Text-Guided Image Generation and Manipulation},
-  author={Kocasarı, Umut and Dirik, Alara and Tiftikci, Mert and Yanardag, Pinar},
-  booktitle={},
-  month={},
+  author={Umut Kocasari and Alara Dirik and Mert Tiftikci and Pinar Yanardag},
+  journal={2022 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
   year={2022},
-  pages={}
+  pages={3441-3450}
 }
 ```
 
