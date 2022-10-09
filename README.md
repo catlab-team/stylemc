@@ -61,10 +61,11 @@ This repo is built on the official StyleGAN2 repo, please refer to NVIDIA's [rep
 
 If you use this code for your research, please cite our paper:
 ```
-@inproceedings{kocasari2022stylemc,
-  title     = {StyleMC: Multi-Channel Based Fast Text-Guided Image Generationand Manipulation},
-  author    = {Umut Kocasari and Alara Dirik and Mert Tiftikci and Pinar Yanardag},
-  booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
-  year      = {2022}
+@article{Kocasari2022StyleMCMB,
+  title={StyleMC: Multi-Channel Based Fast Text-Guided Image Generation and Manipulation},
+  author={Umut Kocasari and Alara Dirik and Mert Tiftikci and Pinar Yanardag},
+  journal={2022 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+  year={2022},
+  pages={3441-3450}
 }
 ```
